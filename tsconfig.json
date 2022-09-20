@@ -1,8 +1,12 @@
 {
     "compilerOptions": {
         "outDir": "./dist",
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "sourceMap": true,
+        "strict": true,
         "module":"commonjs",
-        "target": "ES2018",
+        "target": "ES2019",
         "esModuleInterop": true,
         "allowJs": true,
         "strictNullChecks": true
