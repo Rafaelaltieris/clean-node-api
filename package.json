@@ -1,11 +1,11 @@
 {
-  "name": "git-samples",
+  "name": "clean-node-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:staged": "jest"
+    "test": "jest --passWithNoTests --watch",
+    "test:staged": "jest --passWithNoTests"
   },
   "keywords": [],
   "author": "",
