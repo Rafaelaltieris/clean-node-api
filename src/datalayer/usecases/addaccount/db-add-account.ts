@@ -1,7 +1,5 @@
 /* eslint-disable @typescript-eslint/return-await */
-import { AccountModel } from '../../../domain/models/account'
-import { AddAccount, AddAccountModel } from '../../../domain/Usecase/add_account'
-import { Encrypter } from '../../protocols/encrypter'
+import { AccountModel, AddAccount, AddAccountModel, Encrypter } from './db-add-account-protocols'
 
 export class DbAddAccount implements AddAccount {
   private readonly encrypter: Encrypter
