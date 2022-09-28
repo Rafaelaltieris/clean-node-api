@@ -9,7 +9,9 @@
     "test:unit": "npm test -- --watch -c jest-unitconfig.js",
     "test:integration": "npm test -- --watch -c jest-integration-config.js",
     "test:staged": "npm test --findRelatedTests",
-    "test:ci": "npm test --coverage"
+    "test:ci": "npm test --coverage",
+    "no-return-await": "off",
+    "@typescript-eslint/return-await": "warn"
   },
   "keywords": [],
   "author": "",
