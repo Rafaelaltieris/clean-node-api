@@ -1,5 +1,5 @@
 import { LoginController } from './login'
-import { badRequest } from '../../helper/http-helper'
+import { badRequest, serverError } from '../../helper/http-helper'
 import { MissingParamError } from '../../errors/missing-param-error'
 import { EmailValidator } from '../../protocols/emailValidator'
 import { InvalidParamError } from '../../errors'
@@ -91,7 +91,7 @@ describe('Login Controller', () => {
       throw new Error()
     })
     const httpResponse = await sut.handle(makeFakeRequest())
-    expect(httpResponse).toEqual(new Error())
+    expect(httpResponse).toEqual(serverError(new Error()))
   })
 
   test('Should call Authentication with with correct email', async () => {
